@@ -65,13 +65,13 @@ if analysis_choice == "Univariate Analysis":
 
     st.subheader("Distribution of Production Features")
     fig, axes = plt.subplots(2, 2, figsize=(12, 10))
-    sns.histplot(df["Production(Tons)"], ax=axes[0, 0], kde=True)
+    sns.distplot(df["Production(Tons)"], ax=axes[0, 0])
     axes[0, 0].set_title("Production(Tons)")
-    sns.histplot(df["Production_per_person(Kg)"], ax=axes[0, 1], kde=True)
+    sns.distplot(df["Production_per_person(Kg)"], ax=axes[0, 1])
     axes[0, 1].set_title("Production_per_person(Kg)")
-    sns.histplot(df["Acreage(Hectare)"], ax=axes[1, 0], kde=True)
+    sns.distplot(df["Acreage(Hectare)"], ax=axes[1, 0])
     axes[1, 0].set_title("Acreage(Hectare)")
-    sns.histplot(df["Yield(Kg/Hectare)"], ax=axes[1, 1], kde=True)
+    sns.distplot(df["Yield(Kg/Hectare)"], ax=axes[1, 1])
     axes[1, 1].set_title("Yield(Kg/Hectare)")
     st.pyplot(fig)
 
