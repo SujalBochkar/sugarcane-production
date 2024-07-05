@@ -57,7 +57,7 @@ if analysis_choice == "Univariate Analysis":
     st.subheader("Number of Countries Producing Sugarcane from Each Continent")
     continent_counts = df["Continent"].value_counts().sort_index()
     st.write(continent_counts)
-    
+
     st.bar_chart(continent_counts.sort_values(ascending=True))
 
     st.subheader("Top 10 Countries by Production (Tons)")
@@ -65,13 +65,13 @@ if analysis_choice == "Univariate Analysis":
 
     st.subheader("Distribution of Production Features")
     fig, axes = plt.subplots(2, 2, figsize=(12, 10))
-    sns.distplot(df["Production(Tons)"], ax=axes[0, 0])
+    sns.histplot(df["Production(Tons)"], ax=axes[0, 0], kde=True)
     axes[0, 0].set_title("Production(Tons)")
-    sns.distplot(df["Production_per_person(Kg)"], ax=axes[0, 1])
+    sns.histplot(df["Production_per_person(Kg)"], ax=axes[0, 1], kde=True)
     axes[0, 1].set_title("Production_per_person(Kg)")
-    sns.distplot(df["Acreage(Hectare)"], ax=axes[1, 0])
+    sns.histplot(df["Acreage(Hectare)"], ax=axes[1, 0], kde=True)
     axes[1, 0].set_title("Acreage(Hectare)")
-    sns.distplot(df["Yield(Kg/Hectare)"], ax=axes[1, 1])
+    sns.histplot(df["Yield(Kg/Hectare)"], ax=axes[1, 1], kde=True)
     axes[1, 1].set_title("Yield(Kg/Hectare)")
     st.pyplot(fig)
 
