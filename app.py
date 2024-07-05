@@ -117,4 +117,4 @@ elif analysis_choice == "Continent Analysis":
 
 # Displaying footer or any additional information
 st.sidebar.markdown("---")
-st.sidebar.title("Developed by Your Sujal")
+st.sidebar.title("Developed by Sujal")
