@@ -3,22 +3,6 @@
 
 A Streamlit web application that provides comprehensive analysis of sugarcane production across various countries. The app includes univariate, bivariate, and continent-based analyses using data visualization tools such as Seaborn and Matplotlib.
 
-## Features
-
-- **Univariate Analysis**: 
-  - View sugarcane production data across countries.
-  - See the number of countries producing sugarcane by continent.
-  - Explore the top 10 countries by production and the distribution of production features.
-  
-- **Bivariate Analysis**: 
-  - Visualize the relationship between land area and production.
-  - Visualize the relationship between yield per hectare and production.
-
-- **Continent Analysis**: 
-  - Explore sugarcane production summarized by continent.
-  - Analyze the effect of the number of producing countries on overall production.
-  - View continent-wise production distribution with visualizations.
-
 ## Installation and Setup
 
 1. **Clone the repository**:
@@ -59,6 +43,22 @@ A Streamlit web application that provides comprehensive analysis of sugarcane pr
   - **Univariate Analysis**: View country and continent data, top producers, and feature distributions.
   - **Bivariate Analysis**: Visualize relationships between variables such as land area and production.
   - **Continent Analysis**: Explore production and its distribution across continents.
+
+## Features
+
+- **Univariate Analysis**: 
+  - View sugarcane production data across countries.
+  - See the number of countries producing sugarcane by continent.
+  - Explore the top 10 countries by production and the distribution of production features.
+  
+- **Bivariate Analysis**: 
+  - Visualize the relationship between land area and production.
+  - Visualize the relationship between yield per hectare and production.
+
+- **Continent Analysis**: 
+  - Explore sugarcane production summarized by continent.
+  - Analyze the effect of the number of producing countries on overall production.
+  - View continent-wise production distribution with visualizations.
 
 ## Data Cleaning
 
